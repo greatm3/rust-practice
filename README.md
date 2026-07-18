@@ -1,5 +1,6 @@
 # Rust practice
-![Rust](https://img.shields.io/badge/Rust-1.81-orange)
+![Rust](https://img.shields.io/badge/Rust-1.97-orange)
+![Build](https://img.shields.io/badge/build-passing-lightgreen)
 
 My journey learning Rust - Reading the Rust Book, exercises/challenges are custom
 
