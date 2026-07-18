@@ -1,1 +1,8 @@
 /target
+**/*.rs.bk
+**/*/rs.swp
+*.pdb
+*.swp
+*.tmp
+
+
