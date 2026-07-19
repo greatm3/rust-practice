@@ -8,18 +8,18 @@ struct Row {
 }
 
 fn row_to_map(row: &Row) -> HashMap<String, String> {
-    let map = HashMap::new();
+    let mut map = HashMap::new();
 
     map.insert("id".to_string(), row.id.to_string());
-    map.insert("name".to_string(), name);
+    map.insert("name".to_string(), row.name.clone());
     map.insert("age".to_string(), row.age.to_string());
 
     map
 }
 
-//fn map_to_json(map: &HashMap<String, String>) -> String {
-//    todo!()
-//}
+fn map_to_json(map: &HashMap<String, String>) -> String {
+    todo!()
+}
 
 fn main() {
     let row = Row {
