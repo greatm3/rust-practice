@@ -18,7 +18,13 @@ fn row_to_map(row: &Row) -> HashMap<String, String> {
 }
 
 fn map_to_json(map: &HashMap<String, String>) -> String {
-    todo!()
+    let json = serde_json::to_string(&map).unwrap();
+    json
+}
+
+fn json_to_map(json_str: &str) -> HashMap<String, String> {
+    let map: HashMap<String, String> = serde_json::from_str(&json_str).unwrap();
+    map
 }
 
 fn main() {
@@ -29,8 +35,10 @@ fn main() {
     };
 
     let map = row_to_map(&row);
-    // let json = map_to_json(&map);
+    let json = map_to_json(&map);
 
-    println!("map: {:?}", map);
-    // println!("{}", json);
+    let parsed_map = json_to_map(&json);
+
+    println!("{:?}", parsed_map);
+    assert_eq!(map, parsed_map);
 }
