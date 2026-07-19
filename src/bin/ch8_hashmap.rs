@@ -1,3 +1,5 @@
+// will eventually get better, as i move up chapters in the Book
+
 use serde_json;
 use std::collections::HashMap;
 
