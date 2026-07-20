@@ -38,10 +38,10 @@ fn main() {
     };
 
     let map = row_to_map(&row);
-    let json = map_to_json(&map);
 
-    match json {
-        Ok(json_string) => println!("{}", json_string),
-        Err(e) => println!("Error turning map to json: {}", e),
-    }
+    let json = map_to_json(&map).unwrap();
+    println!("{}", json);
+
+    let back: HashMap<String, String> = json_to_map(&json).unwrap();
+    println!("{:?}", back);
 }
