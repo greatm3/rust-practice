@@ -24,7 +24,6 @@ fn map_to_json(map: &HashMap<String, String>) -> Result<String, serde_json::Erro
     Ok(json)
 }
 
-#[allow(unused)]
 fn json_to_map(json_str: &str) -> Result<HashMap<String, String>, serde_json::Error> {
     let map = serde_json::from_str(&json_str)?;
     Ok(map)
