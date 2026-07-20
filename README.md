@@ -6,7 +6,7 @@ My journey learning Rust - Reading the Rust Book, exercises/challenges are custo
 
 ### Progress
 - [x] Chapter 8: Vectors, Strings, HashMaps
-- [ ] Chapter 9: Error Handling
+- [x] Chapter 9: Error Handling
 - [ ] Chapter 10: Generics & Traits
 - [ ] Chapter 11: Testing
 - [ ] Chapter 12: CLI
